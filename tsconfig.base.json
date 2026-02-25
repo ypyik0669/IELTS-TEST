@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@ielts/shared": ["packages/shared/src/index.ts"]
+    },
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@ielts/worker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/apps/worker/src/main.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"No lint configured for @ielts/worker\"",
+    "format": "echo \"No format step for @ielts/worker\"",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@ielts/shared": "workspace:*",
+    "axios": "^1.12.2",
+    "bullmq": "^5.58.2",
+    "ioredis": "^5.7.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
